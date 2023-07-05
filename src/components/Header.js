@@ -18,7 +18,7 @@ const Header = () => {
         </a>
         <div>
           <input
-            className=" p-3 w-[150px] h-7 bg-[#faf5e9] opacity-25 rounded-full"
+            className=" p-3 w-[200px] h-7 bg-[#faf5e9] opacity-25 rounded-full"
             type="text"
             name="search"
             value="search"
@@ -28,7 +28,7 @@ const Header = () => {
           <button className=" bg-transparent text-[#009b4d] font-semibold text-md" type="">
             EN -
           </button>
-          <button className=" bg-transparent ml-2 text-[#faf5e9] font-semibold text-md" type="">
+          <button className=" bg-transparent ml-2 text-[#faf5e9] font-semibold text-md hover:text-[#009b4d]" type="">
             FR
           </button>
         </div>
