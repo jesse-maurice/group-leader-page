@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+
+import React from 'react';
+
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className=" px-[140px] pt-[40px] font-['Raleway'] bg-[url('https://img.freepik.com/free-photo/medium-shot-man-delivering-groceries_23-2149722269.jpg?w=1480&t=st=1688563413~exp=1688564013~hmac=1d38d8c82a2c4e5436bb0b2413706e9eee23f7f6a516dfce3fceeb9c4ed577e2')] bg-cover bg-right bg-no-repeat w-auto h-screen ">
+        <Header/>
+      
+      </div>
+    </>
   );
 }
 
