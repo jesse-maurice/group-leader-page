@@ -7,10 +7,10 @@ const Header = () => {
     <>
       <div className="flex flex-row items-center justify-between w-full ">
         <a className="cursor-pointer " href="/">
-          <h1 className="text-[33px] font-extrabold text-[#faf5e9] max-sm:text-3xl max-md:text-4xl">
+          <h1 className="text-[25px] font-extrabold text-[#faf5e9] max-sm:text-3xl max-md:text-4xl">
             WE
             <img
-              className="inline-block mb-[6px] ml-[2px] "
+              className="inline-block w-[70px] mb-[4px] ml-[2px] "
               src={image}
               alt=""
             ></img>
