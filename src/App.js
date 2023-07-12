@@ -1,19 +1,29 @@
 import './App.css';
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
+import background from './images/medium-shot-man-delivering-groceries 1.jpg';
 
 function App() {
+  const [lang, setLang] = useState("en");
   return (
     <>
-      <div className=" px-[140px] pt-[20px] font-['Raleway'] bg-[url('https://img.freepik.com/free-photo/medium-shot-man-delivering-groceries_23-2149722269.jpg?w=1480&t=st=1688563413~exp=1688564013~hmac=1d38d8c82a2c4e5436bb0b2413706e9eee23f7f6a516dfce3fceeb9c4ed577e2')] shadow-inner brightness-90 bg-blend-darken bg-cover bg-right bg-no-repeat w-auto h-screen overflow-hidden ">
-        <Header />
-        <Main />
-        <Footer/>
-      
+      <div className="w-full h-screen overflow-hidden font-['Raleway']">
+        <div className="relative w-full h-full">
+          <img
+            className="object-cover w-full h-screen transition-all"
+            src={background}
+            alt=""
+          ></img>
+        </div>
+        <div className="absolute inset-0 overflow-hidden">
+          <Header lang={lang} setLang={setLang} />
+          <Main lang={lang} setLang={setLang} />
+          <Footer lang={lang} setLang={setLang} />
+        </div>
       </div>
     </>
   );
